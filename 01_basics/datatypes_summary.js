@@ -51,3 +51,33 @@ console.log(typeof anotherId)
 
 /* JavaScript is a dynamically typed language. Because data 
  type will automatically assigned at the time of compilation or code execution.*/
+
+
+//  *********************** Memory ******************
+
+// Stack(Primitive) we get copy, Heap(Non -primitive) // we get reference
+
+let myName = "Bindu"
+
+let anotherName = myName
+anotherName = "bin"
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "bindu@google.com"
+console.log(userOne.email)
+console.log(userTwo.email)
+
+//datatypes are based on memory allocation
+// Primitive datatypes->  call by value (string,number,boolean,null,undefined,BigInt,symbol) ->Stack memory
+
+// Reference/Non primitive data types -> call by reference ( array,object, function) -> heap memory
+
+// JavaScript is a dynamically typed language. This means that you don't need to specify the data type of a variable when you declare it.
